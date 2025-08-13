@@ -1,0 +1,811 @@
+{
+  "timestamp": "2025-08-13T12:19:56.464Z",
+  "supabase_project": "dxcogkddtggvylbqupaq",
+  "data": {
+    "merchants": [
+      {
+        "id": 3,
+        "name": "ايه خالد ",
+        "email": "yahooamr22@gmail.com",
+        "phone": "+201111612712",
+        "address": "ناهيا البلد مدينه كرداسه الجيزه",
+        "status": "نشط",
+        "join_date": "2025-08-03",
+        "total_invoices": 0,
+        "total_amount": 0,
+        "category": "جملة",
+        "created_at": "2025-08-03T11:23:03.159847+00:00",
+        "updated_at": "2025-08-03T11:23:03.159847+00:00"
+      },
+      {
+        "id": 6,
+        "name": "كمال امام",
+        "email": "mariislam3040@gmail.com",
+        "phone": "+0201101645274",
+        "address": "ناهيا البلد مدينه كرداسه الجيزه",
+        "status": "نشط",
+        "join_date": "2025-08-03",
+        "total_invoices": 0,
+        "total_amount": 0,
+        "category": "جملة",
+        "created_at": "2025-08-03T11:30:40.881545+00:00",
+        "updated_at": "2025-08-03T11:30:40.881545+00:00"
+      },
+      {
+        "id": 7,
+        "name": "رامى العنانى ",
+        "email": "yahooamr@gmail.com",
+        "phone": "+201111",
+        "address": "ناهيا البلد مدينه كرداسه الجيزه",
+        "status": "نشط",
+        "join_date": "2025-08-03",
+        "total_invoices": 0,
+        "total_amount": 0,
+        "category": "جملة",
+        "created_at": "2025-08-03T11:33:41.853736+00:00",
+        "updated_at": "2025-08-03T11:33:41.853736+00:00"
+      },
+      {
+        "id": 8,
+        "name": "لبنى",
+        "email": "yaho@gmail.com",
+        "phone": "+201111612",
+        "address": "ناهيا البلد مدينه كرداسه الجيزه",
+        "status": "نشط",
+        "join_date": "2025-08-03",
+        "total_invoices": 0,
+        "total_amount": 0,
+        "category": "جملة",
+        "created_at": "2025-08-03T11:37:37.507237+00:00",
+        "updated_at": "2025-08-03T11:37:37.507237+00:00"
+      },
+      {
+        "id": 9,
+        "name": "بنت عمته عبدالله ",
+        "email": "oamr22@gmail.com",
+        "phone": "+2011116",
+        "address": "ناهيا البلد مدينه كرداسه الجيزه",
+        "status": "نشط",
+        "join_date": "2025-08-03",
+        "total_invoices": 0,
+        "total_amount": 0,
+        "category": "جملة",
+        "created_at": "2025-08-03T11:44:32.779022+00:00",
+        "updated_at": "2025-08-03T11:44:32.779022+00:00"
+      },
+      {
+        "id": 10,
+        "name": "ام احمد عبدالعزيز ",
+        "email": "yaho22@gmail.com",
+        "phone": "+2011116127",
+        "address": "ناهيا البلد مدينه كرداسه الجيزه",
+        "status": "نشط",
+        "join_date": "2025-08-03",
+        "total_invoices": 0,
+        "total_amount": 0,
+        "category": "جملة",
+        "created_at": "2025-08-03T11:55:45.025219+00:00",
+        "updated_at": "2025-08-03T11:55:45.025219+00:00"
+      },
+      {
+        "id": 11,
+        "name": "عبدالله ابو المجد ",
+        "email": "yoamr22@gmail.com",
+        "phone": "+201111612",
+        "address": "ناهيا البلد مدينه كرداسه الجيزه\n",
+        "status": "نشط",
+        "join_date": "2025-08-03",
+        "total_invoices": 0,
+        "total_amount": 0,
+        "category": "جملة",
+        "created_at": "2025-08-03T12:00:28.753616+00:00",
+        "updated_at": "2025-08-03T12:00:28.753616+00:00"
+      },
+      {
+        "id": 12,
+        "name": " بيع قطاعى ",
+        "email": "ymr22@gmail.com",
+        "phone": "111612712",
+        "address": "ناهيا البلد مدينه كرداسه الجيزه",
+        "status": "نشط",
+        "join_date": "2025-08-03",
+        "total_invoices": 0,
+        "total_amount": 0,
+        "category": "تجزئة",
+        "created_at": "2025-08-03T21:01:16.541455+00:00",
+        "updated_at": "2025-08-03T21:01:16.541455+00:00"
+      },
+      {
+        "id": 13,
+        "name": "ام ساندى",
+        "email": "22@gmail.com",
+        "phone": "01128877715",
+        "address": "ناهيا البلد مدينه كرداسه الجيزه",
+        "status": "نشط",
+        "join_date": "2025-08-05",
+        "total_invoices": 0,
+        "total_amount": 0,
+        "category": "جملة",
+        "created_at": "2025-08-05T18:50:58.066202+00:00",
+        "updated_at": "2025-08-05T18:50:58.066202+00:00"
+      },
+      {
+        "id": 16,
+        "name": "عبدالمجيد الصرفى ",
+        "email": "amr22@gmail.com",
+        "phone": "+1612712",
+        "address": "ناهيا البلد مدينه كرداسه الجيزه",
+        "status": "نشط",
+        "join_date": "2025-08-09",
+        "total_invoices": 0,
+        "total_amount": 0,
+        "category": "جملة",
+        "created_at": "2025-08-09T13:51:44.034953+00:00",
+        "updated_at": "2025-08-09T13:51:44.034953+00:00"
+      },
+      {
+        "id": 19,
+        "name": "على شنن ",
+        "email": "yahr22@gmail.com",
+        "phone": "11612712",
+        "address": "ناهيا البلد مدينه كرداسه الجيزه",
+        "status": "نشط",
+        "join_date": "2025-08-10",
+        "total_invoices": 0,
+        "total_amount": 0,
+        "category": "تجزئة",
+        "created_at": "2025-08-10T23:26:21.66176+00:00",
+        "updated_at": "2025-08-10T23:26:21.66176+00:00"
+      }
+    ],
+    "invoices": [
+      {
+        "id": "INV-001",
+        "merchant_id": 3,
+        "merchant_name": "ايه خالد ",
+        "merchant_phone": "+201111612712",
+        "amount": 3754,
+        "status": "متأخرة",
+        "date": "2025-08-03",
+        "due_date": "2025-08-04",
+        "items": [
+          {
+            "name": "مخمريات ",
+            "price": 20,
+            "quantity": 50
+          },
+          {
+            "name": "مزيل عرق ",
+            "price": 22,
+            "quantity": 30
+          },
+          {
+            "name": "مزيل عرق ",
+            "price": 22,
+            "quantity": 12
+          },
+          {
+            "name": "شاور",
+            "price": 45,
+            "quantity": 20
+          },
+          {
+            "name": "شامبو ",
+            "price": 55,
+            "quantity": 6
+          },
+          {
+            "name": "سبلاش ",
+            "price": 25,
+            "quantity": 24
+          }
+        ],
+        "created_at": "2025-08-03T11:27:05.874676+00:00",
+        "updated_at": "2025-08-10T23:15:57.466+00:00",
+        "paid_amount": 0,
+        "remaining_amount": 3196
+      },
+      {
+        "id": "INV-002",
+        "merchant_id": 6,
+        "merchant_name": "كمال امام",
+        "merchant_phone": "+0201101645274",
+        "amount": 1390,
+        "status": "مسودة",
+        "date": "2025-08-03",
+        "due_date": "2025-08-18",
+        "items": [
+          {
+            "name": "مخمريات ",
+            "price": 20,
+            "quantity": 42
+          },
+          {
+            "name": "مزيل ",
+            "price": 22,
+            "quantity": 25
+          }
+        ],
+        "created_at": "2025-08-03T11:32:41.858178+00:00",
+        "updated_at": "2025-08-03T12:12:36.965+00:00",
+        "paid_amount": 0,
+        "remaining_amount": 1415
+      },
+      {
+        "id": "INV-003",
+        "merchant_id": 7,
+        "merchant_name": "رامى العنانى ",
+        "merchant_phone": "+201111",
+        "amount": 378,
+        "status": "مدفوعة",
+        "date": "2025-08-03",
+        "due_date": "2025-08-04",
+        "items": [
+          {
+            "name": "مخمريات ",
+            "price": 20,
+            "quantity": 9
+          },
+          {
+            "name": "مزيل ",
+            "price": 22,
+            "quantity": 9
+          }
+        ],
+        "created_at": "2025-08-03T11:34:44.324375+00:00",
+        "updated_at": "2025-08-08T17:43:20.931+00:00",
+        "paid_amount": 378,
+        "remaining_amount": 0
+      },
+      {
+        "id": "INV-004",
+        "merchant_id": 8,
+        "merchant_name": "لبنى",
+        "merchant_phone": "+201111612",
+        "amount": 3436,
+        "status": "معلقة",
+        "date": "2025-08-03",
+        "due_date": "2025-08-03",
+        "items": [
+          {
+            "name": "مخمريات ",
+            "price": 20,
+            "quantity": 21
+          },
+          {
+            "name": "مزيل ",
+            "price": 22,
+            "quantity": 21
+          },
+          {
+            "name": "شاور",
+            "price": 45,
+            "quantity": 15
+          },
+          {
+            "name": "شامبو ",
+            "price": 55,
+            "quantity": 12
+          },
+          {
+            "name": "شاور",
+            "price": 45,
+            "quantity": 9
+          },
+          {
+            "name": "شامبو ",
+            "price": 55,
+            "quantity": 12
+          },
+          {
+            "name": "مزيل ",
+            "price": 22,
+            "quantity": 7
+          }
+        ],
+        "created_at": "2025-08-03T11:41:42.508292+00:00",
+        "updated_at": "2025-08-05T18:47:28.774+00:00",
+        "paid_amount": 0,
+        "remaining_amount": 1908
+      },
+      {
+        "id": "INV-005",
+        "merchant_id": 9,
+        "merchant_name": "بنت عمته عبدالله ",
+        "merchant_phone": "+2011116",
+        "amount": 1669,
+        "status": "متأخرة",
+        "date": "2025-08-03",
+        "due_date": "2025-08-03",
+        "items": [
+          {
+            "name": "مخمريات ",
+            "price": 20,
+            "quantity": 48
+          },
+          {
+            "name": "مزيل ",
+            "price": 22,
+            "quantity": 17
+          },
+          {
+            "name": "شاور",
+            "price": 45,
+            "quantity": 5
+          },
+          {
+            "name": "شامبو",
+            "price": 55,
+            "quantity": 2
+          }
+        ],
+        "created_at": "2025-08-03T11:49:10.817668+00:00",
+        "updated_at": "2025-08-03T12:10:05.074+00:00",
+        "paid_amount": 0,
+        "remaining_amount": 1669
+      },
+      {
+        "id": "INV-006",
+        "merchant_id": 10,
+        "merchant_name": "ام احمد عبدالعزيز ",
+        "merchant_phone": "+2011116127",
+        "amount": 1495,
+        "status": "متأخرة",
+        "date": "2025-08-03",
+        "due_date": "2025-08-12",
+        "items": [
+          {
+            "name": "شامبو",
+            "price": 55,
+            "quantity": 6
+          },
+          {
+            "name": "شاور",
+            "price": 45,
+            "quantity": 16
+          },
+          {
+            "name": "مخمريات",
+            "price": 20,
+            "quantity": 10
+          },
+          {
+            "name": "شاور",
+            "price": 45,
+            "quantity": 3
+          },
+          {
+            "name": "شامبو",
+            "price": 55,
+            "quantity": 2
+          }
+        ],
+        "created_at": "2025-08-03T11:58:09.21208+00:00",
+        "updated_at": "2025-08-10T22:39:55.947+00:00",
+        "paid_amount": 0,
+        "remaining_amount": 1250
+      },
+      {
+        "id": "INV-007",
+        "merchant_id": 11,
+        "merchant_name": "عبدالله ابو المجد ",
+        "merchant_phone": "+201111612",
+        "amount": 6335,
+        "status": "معلقة",
+        "date": "2025-08-03",
+        "due_date": "2025-08-25",
+        "items": [
+          {
+            "name": "مخمريات ",
+            "price": 20,
+            "quantity": 30
+          },
+          {
+            "name": "مزيل ",
+            "price": 22,
+            "quantity": 35
+          },
+          {
+            "name": "شامبو ",
+            "price": 55,
+            "quantity": 9
+          },
+          {
+            "name": "شامبو ",
+            "price": 55,
+            "quantity": 10
+          },
+          {
+            "name": "مزيل ",
+            "price": 22,
+            "quantity": 10
+          },
+          {
+            "name": "مخمريات ",
+            "price": 20,
+            "quantity": 10
+          },
+          {
+            "name": "سبلاش ",
+            "price": 25,
+            "quantity": 140
+          }
+        ],
+        "created_at": "2025-08-03T12:03:10.327237+00:00",
+        "updated_at": "2025-08-07T00:02:03.187+00:00",
+        "paid_amount": 0,
+        "remaining_amount": 1980
+      },
+      {
+        "id": "INV-008",
+        "merchant_id": 12,
+        "merchant_name": " بيع قطاعى ",
+        "merchant_phone": "111612712",
+        "amount": 100,
+        "status": "مدفوعة",
+        "date": "2025-08-03",
+        "due_date": "2025-08-04",
+        "items": [
+          {
+            "name": "مخمريات ",
+            "price": 30,
+            "quantity": 1
+          },
+          {
+            "name": "شامبو ",
+            "price": 70,
+            "quantity": 1
+          }
+        ],
+        "created_at": "2025-08-03T21:02:09.608436+00:00",
+        "updated_at": "2025-08-03T21:02:09.608436+00:00",
+        "paid_amount": 100,
+        "remaining_amount": 0
+      },
+      {
+        "id": "INV-009",
+        "merchant_id": 9,
+        "merchant_name": "بنت عمته عبدالله ",
+        "merchant_phone": "+2011116",
+        "amount": 5845,
+        "status": "معلقة",
+        "date": "2025-08-04",
+        "due_date": "2025-08-06",
+        "items": [
+          {
+            "name": "شامبو ",
+            "price": 55,
+            "quantity": 7
+          },
+          {
+            "name": "شاور",
+            "price": 45,
+            "quantity": 3
+          },
+          {
+            "name": "بادى سبلاش ",
+            "price": 25,
+            "quantity": 200
+          },
+          {
+            "name": "شاور",
+            "price": 45,
+            "quantity": 6
+          },
+          {
+            "name": "شامبو ",
+            "price": 55,
+            "quantity": 1
+          }
+        ],
+        "created_at": "2025-08-04T22:32:41.905819+00:00",
+        "updated_at": "2025-08-12T16:30:40.78+00:00",
+        "paid_amount": 0,
+        "remaining_amount": 5520
+      },
+      {
+        "id": "INV-010",
+        "merchant_id": 13,
+        "merchant_name": "ام ساندى",
+        "merchant_phone": "01128877715",
+        "amount": 1325,
+        "status": "متأخرة",
+        "date": "2025-08-05",
+        "due_date": "2025-08-06",
+        "items": [
+          {
+            "name": "شاور",
+            "price": 45,
+            "quantity": 16
+          },
+          {
+            "name": "شامبو",
+            "price": 55,
+            "quantity": 11
+          }
+        ],
+        "created_at": "2025-08-05T18:52:09.900765+00:00",
+        "updated_at": "2025-08-10T22:49:49.43+00:00",
+        "paid_amount": 0,
+        "remaining_amount": 1325
+      },
+      {
+        "id": "INV-011",
+        "merchant_id": 8,
+        "merchant_name": "لبنى",
+        "merchant_phone": "+201111612",
+        "amount": 750,
+        "status": "متأخرة",
+        "date": "2025-08-07",
+        "due_date": "2025-08-07",
+        "items": [
+          {
+            "name": "سبلاش",
+            "price": 25,
+            "quantity": 10
+          },
+          {
+            "name": "سبلاش",
+            "price": 25,
+            "quantity": 20
+          }
+        ],
+        "created_at": "2025-08-07T18:55:06.020345+00:00",
+        "updated_at": "2025-08-10T22:49:37.986+00:00",
+        "paid_amount": 0,
+        "remaining_amount": 750
+      },
+      {
+        "id": "INV-012",
+        "merchant_id": 16,
+        "merchant_name": "عبدالمجيد الصرفى ",
+        "merchant_phone": "+1612712",
+        "amount": 1029,
+        "status": "متأخرة",
+        "date": "2025-08-09",
+        "due_date": "2025-08-31",
+        "items": [
+          {
+            "name": "شامبو",
+            "price": 55,
+            "quantity": 3
+          },
+          {
+            "name": "مزيل",
+            "price": 22,
+            "quantity": 12
+          },
+          {
+            "name": "سبلاش",
+            "price": 25,
+            "quantity": 24
+          }
+        ],
+        "created_at": "2025-08-09T13:53:19.745744+00:00",
+        "updated_at": "2025-08-10T22:47:48.485+00:00",
+        "paid_amount": 0,
+        "remaining_amount": 1029
+      },
+      {
+        "id": "INV-013",
+        "merchant_id": 10,
+        "merchant_name": "ام احمد عبدالعزيز ",
+        "merchant_phone": "+2011116127",
+        "amount": 1152,
+        "status": "مسودة",
+        "date": "2025-08-10",
+        "due_date": "2025-08-11",
+        "items": [
+          {
+            "name": "مزيل ",
+            "price": 22,
+            "quantity": 41
+          },
+          {
+            "name": "سبلاش ",
+            "price": 25,
+            "quantity": 10
+          }
+        ],
+        "created_at": "2025-08-10T23:20:53.469515+00:00",
+        "updated_at": "2025-08-10T23:20:53.469515+00:00",
+        "paid_amount": 0,
+        "remaining_amount": 1152
+      },
+      {
+        "id": "INV-015",
+        "merchant_id": 19,
+        "merchant_name": "على شنن ",
+        "merchant_phone": "11612712",
+        "amount": 180,
+        "status": "مسودة",
+        "date": "2025-08-10",
+        "due_date": "2025-08-12",
+        "items": [
+          {
+            "name": "شامبو ",
+            "price": 60,
+            "quantity": 1
+          },
+          {
+            "name": "مزيل ",
+            "price": 30,
+            "quantity": 1
+          },
+          {
+            "name": "سبلاش ",
+            "price": 30,
+            "quantity": 2
+          },
+          {
+            "name": "مخمريه",
+            "price": 30,
+            "quantity": 1
+          }
+        ],
+        "created_at": "2025-08-10T23:28:22.131674+00:00",
+        "updated_at": "2025-08-10T23:28:22.131674+00:00",
+        "paid_amount": 0,
+        "remaining_amount": 180
+      },
+      {
+        "id": "INV-016",
+        "merchant_id": 11,
+        "merchant_name": "عبدالله ابو المجد ",
+        "merchant_phone": "+201111612",
+        "amount": 1535,
+        "status": "مسودة",
+        "date": "2025-08-10",
+        "due_date": "2025-08-11",
+        "items": [
+          {
+            "name": "سبلاش",
+            "price": 25,
+            "quantity": 20
+          },
+          {
+            "name": "شاور",
+            "price": 45,
+            "quantity": 23
+          }
+        ],
+        "created_at": "2025-08-10T23:35:37.917339+00:00",
+        "updated_at": "2025-08-13T08:02:11.933+00:00",
+        "paid_amount": 0,
+        "remaining_amount": 500
+      }
+    ],
+    "payments": [
+      {
+        "id": 4,
+        "invoice_id": "INV-001",
+        "merchant_id": 3,
+        "amount": 1700,
+        "payment_method": "نقدي",
+        "payment_date": "2025-08-03",
+        "notes": null,
+        "created_at": "2025-08-03T11:28:00.234569+00:00"
+      },
+      {
+        "id": 6,
+        "invoice_id": "INV-005",
+        "merchant_id": 9,
+        "amount": 580,
+        "payment_method": "نقدي",
+        "payment_date": "2025-08-03",
+        "notes": null,
+        "created_at": "2025-08-03T11:49:42.205309+00:00"
+      },
+      {
+        "id": 7,
+        "invoice_id": "INV-003",
+        "merchant_id": 7,
+        "amount": 378,
+        "payment_method": "نقدي",
+        "payment_date": "2025-08-03",
+        "notes": null,
+        "created_at": "2025-08-03T17:43:02.741662+00:00"
+      },
+      {
+        "id": 8,
+        "invoice_id": "INV-008",
+        "merchant_id": 12,
+        "amount": 100,
+        "payment_method": "نقدي",
+        "payment_date": "2025-08-03",
+        "notes": null,
+        "created_at": "2025-08-03T21:02:24.346823+00:00"
+      },
+      {
+        "id": 9,
+        "invoice_id": "INV-002",
+        "merchant_id": 6,
+        "amount": 1000,
+        "payment_method": "نقدي",
+        "payment_date": "2025-08-06",
+        "notes": null,
+        "created_at": "2025-08-06T00:58:05.287981+00:00"
+      },
+      {
+        "id": 10,
+        "invoice_id": "INV-004",
+        "merchant_id": 8,
+        "amount": 1500,
+        "payment_method": "نقدي",
+        "payment_date": "2025-08-05",
+        "notes": null,
+        "created_at": "2025-08-06T01:00:15.403672+00:00"
+      },
+      {
+        "id": 12,
+        "invoice_id": "INV-007",
+        "merchant_id": 11,
+        "amount": 1000,
+        "payment_method": "نقدي",
+        "payment_date": "2025-08-05",
+        "notes": null,
+        "created_at": "2025-08-07T00:02:24.839872+00:00"
+      },
+      {
+        "id": 13,
+        "invoice_id": "INV-004",
+        "merchant_id": 8,
+        "amount": 850,
+        "payment_method": "نقدي",
+        "payment_date": "2025-08-07",
+        "notes": null,
+        "created_at": "2025-08-07T18:53:46.402662+00:00"
+      },
+      {
+        "id": 14,
+        "invoice_id": "INV-001",
+        "merchant_id": 3,
+        "amount": 200,
+        "payment_method": "نقدي",
+        "payment_date": "2025-08-07",
+        "notes": null,
+        "created_at": "2025-08-07T20:02:55.782033+00:00"
+      },
+      {
+        "id": 15,
+        "invoice_id": "INV-006",
+        "merchant_id": 10,
+        "amount": 700,
+        "payment_method": "نقدي",
+        "payment_date": "2025-08-09",
+        "notes": null,
+        "created_at": "2025-08-09T18:52:16.943824+00:00"
+      },
+      {
+        "id": 16,
+        "invoice_id": "INV-005",
+        "merchant_id": 9,
+        "amount": 400,
+        "payment_method": "نقدي",
+        "payment_date": "2025-08-07",
+        "notes": null,
+        "created_at": "2025-08-10T23:32:22.247687+00:00"
+      },
+      {
+        "id": 17,
+        "invoice_id": "INV-005",
+        "merchant_id": 9,
+        "amount": 550,
+        "payment_method": "نقدي",
+        "payment_date": "2025-08-11",
+        "notes": null,
+        "created_at": "2025-08-11T16:06:25.53578+00:00"
+      },
+      {
+        "id": 18,
+        "invoice_id": "INV-004",
+        "merchant_id": 8,
+        "amount": 500,
+        "payment_method": "نقدي",
+        "payment_date": "2025-08-11",
+        "notes": null,
+        "created_at": "2025-08-11T16:14:35.808319+00:00"
+      }
+    ]
+  }
+}
