@@ -28,11 +28,24 @@ const EditInvoice = ({ invoice, isOpen, onClose }: EditInvoiceProps) => {
 
   useEffect(() => {
     if (invoice) {
+      // Try to parse items from description
+      let items = [{ name: "", quantity: 1, price: 0 }];
+      try {
+        if (invoice.description) {
+          const parsed = JSON.parse(invoice.description);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            items = parsed;
+          }
+        }
+      } catch (e) {
+        // Use default item if parsing fails
+      }
+
       setFormData({
         merchant_id: invoice.merchant_id.toString(),
         status: invoice.status as any,
         due_date: invoice.due_date,
-        items: invoice.items.length > 0 ? invoice.items : [{ name: "", quantity: 1, price: 0 }]
+        items: items
       });
     }
   }, [invoice]);

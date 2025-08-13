@@ -18,6 +18,7 @@ interface InvoiceDetailsProps {
 
 const InvoiceDetails = ({ invoice, open, onOpenChange }: InvoiceDetailsProps) => {
   const [currentInvoice, setCurrentInvoice] = useState<Invoice | null>(invoice);
+  const [merchantData, setMerchantData] = useState<any>(null);
 
   // Update current invoice when prop changes
   useEffect(() => {
@@ -50,6 +51,17 @@ const InvoiceDetails = ({ invoice, open, onOpenChange }: InvoiceDetailsProps) =>
             // Use the original invoice if fetch fails
             setCurrentInvoice(invoice);
             return;
+          }
+
+          // Fetch merchant data
+          const { data: merchant, error: merchantError } = await supabase
+            .from('merchants')
+            .select('*')
+            .eq('id', data.merchant_id)
+            .single();
+
+          if (!merchantError && merchant) {
+            setMerchantData(merchant);
           }
 
           // Calculate accurate payment amounts
@@ -298,6 +310,22 @@ const InvoiceDetails = ({ invoice, open, onOpenChange }: InvoiceDetailsProps) =>
     }
   };
 
+  // Show loading or error state if no data
+  if (!currentInvoice) {
+    return (
+      <Dialog open={open} onOpenChange={onOpenChange}>
+        <DialogContent className="max-w-md">
+          <DialogHeader>
+            <DialogTitle>تحميل البيانات...</DialogTitle>
+          </DialogHeader>
+          <div className="text-center py-8">
+            <p className="text-muted-foreground">جاري تحميل تفاصيل الفاتورة...</p>
+          </div>
+        </DialogContent>
+      </Dialog>
+    );
+  }
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
@@ -325,7 +353,7 @@ const InvoiceDetails = ({ invoice, open, onOpenChange }: InvoiceDetailsProps) =>
           {/* Header */}
           <div className="text-center border-b pb-4">
             <h1 className="text-3xl font-bold">فاتورة</h1>
-            <p className="text-lg text-muted-foreground">رقم الفاتورة: {invoice.id}</p>
+            <p className="text-lg text-muted-foreground">رقم الفاتورة: {currentInvoice?.id || 'غير محدد'}</p>
           </div>
 
           {/* Invoice Info */}
@@ -335,12 +363,24 @@ const InvoiceDetails = ({ invoice, open, onOpenChange }: InvoiceDetailsProps) =>
               <div className="space-y-2">
                 <div className="flex items-center space-x-2 space-x-reverse">
                   <User className="h-4 w-4 text-muted-foreground" />
-                  <span>{invoice.merchant_name}</span>
+                  <span>{currentInvoice?.merchant_name || 'غير محدد'}</span>
                 </div>
                 <div className="flex items-center space-x-2 space-x-reverse">
                   <Phone className="h-4 w-4 text-muted-foreground" />
-                  <span>{invoice.merchant_phone}</span>
+                  <span>{merchantData?.phone || 'غير محدد'}</span>
                 </div>
+                {merchantData?.email && (
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <span className="h-4 w-4 text-muted-foreground">@</span>
+                    <span>{merchantData.email}</span>
+                  </div>
+                )}
+                {merchantData?.address && (
+                  <div className="flex items-center space-x-2 space-x-reverse">
+                    <MapPin className="h-4 w-4 text-muted-foreground" />
+                    <span>{merchantData.address}</span>
+                  </div>
+                )}
               </div>
             </div>
 
@@ -349,15 +389,15 @@ const InvoiceDetails = ({ invoice, open, onOpenChange }: InvoiceDetailsProps) =>
               <div className="space-y-2">
                 <div className="flex items-center space-x-2 space-x-reverse">
                   <Calendar className="h-4 w-4 text-muted-foreground" />
-                  <span>تاريخ الإنشاء: {new Date(invoice.date).toLocaleDateString('ar-EG')}</span>
+                  <span>تاريخ الإنشاء: {new Date(currentInvoice?.created_at || Date.now()).toLocaleDateString('ar-EG')}</span>
                 </div>
                 <div className="flex items-center space-x-2 space-x-reverse">
                   <Calendar className="h-4 w-4 text-muted-foreground" />
-                  <span>تاريخ الاستحقاق: {new Date(invoice.due_date).toLocaleDateString('ar-EG')}</span>
+                  <span>تاريخ الاستحقاق: {new Date(currentInvoice?.due_date || Date.now()).toLocaleDateString('ar-EG')}</span>
                 </div>
                 <div className="flex items-center space-x-2 space-x-reverse">
-                  <Badge className={getStatusColor(invoice.status)}>
-                    {invoice.status}
+                  <Badge className={getStatusColor(currentInvoice?.status || 'مستحقة')}>
+                    {currentInvoice?.status || 'مستحقة'}
                   </Badge>
                 </div>
               </div>
@@ -369,28 +409,55 @@ const InvoiceDetails = ({ invoice, open, onOpenChange }: InvoiceDetailsProps) =>
           {/* Items */}
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">عناصر الفاتورة</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse border border-gray-300">
-                <thead>
-                  <tr className="bg-gray-50">
-                    <th className="border border-gray-300 p-3 text-right">المنتج/الخدمة</th>
-                    <th className="border border-gray-300 p-3 text-center">الكمية</th>
-                    <th className="border border-gray-300 p-3 text-center">السعر (ج.م)</th>
-                    <th className="border border-gray-300 p-3 text-center">المجموع (ج.م)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {invoice.items.map((item, index) => (
-                    <tr key={index}>
-                      <td className="border border-gray-300 p-3">{item.name}</td>
-                      <td className="border border-gray-300 p-3 text-center">{item.quantity}</td>
-                      <td className="border border-gray-300 p-3 text-center">{item.price.toFixed(2)}</td>
-                      <td className="border border-gray-300 p-3 text-center">{(item.quantity * item.price).toFixed(2)}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            {(() => {
+              // Try to parse items from description
+              let items = [];
+              try {
+                if (currentInvoice?.description) {
+                  const parsed = JSON.parse(currentInvoice.description);
+                  if (Array.isArray(parsed)) {
+                    items = parsed;
+                  }
+                }
+              } catch (e) {
+                // If parsing fails, show description as text
+              }
+
+              if (items.length > 0) {
+                return (
+                  <div className="overflow-x-auto">
+                    <table className="w-full border-collapse border border-gray-300">
+                      <thead>
+                        <tr className="bg-gray-50">
+                          <th className="border border-gray-300 p-3 text-right">المنتج/الخدمة</th>
+                          <th className="border border-gray-300 p-3 text-center">الكمية</th>
+                          <th className="border border-gray-300 p-3 text-center">السعر (ج.م)</th>
+                          <th className="border border-gray-300 p-3 text-center">المجموع (ج.م)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {items.map((item: any, index: number) => (
+                          <tr key={index}>
+                            <td className="border border-gray-300 p-3">{item.name || 'غير محدد'}</td>
+                            <td className="border border-gray-300 p-3 text-center">{item.quantity || 1}</td>
+                            <td className="border border-gray-300 p-3 text-center">{(item.price || 0).toFixed(2)}</td>
+                            <td className="border border-gray-300 p-3 text-center">{((item.quantity || 1) * (item.price || 0)).toFixed(2)}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                );
+              } else {
+                return (
+                  <div className="p-4 bg-gray-50 rounded-lg">
+                    <p className="text-muted-foreground">
+                      {currentInvoice?.description || 'لا توجد تفاصيل متاحة للعناصر'}
+                    </p>
+                  </div>
+                );
+              }
+            })()}
           </div>
 
           <Separator />
@@ -402,15 +469,15 @@ const InvoiceDetails = ({ invoice, open, onOpenChange }: InvoiceDetailsProps) =>
               <div className="space-y-1">
                 <div className="flex justify-between">
                   <span>إجمالي الفاتورة:</span>
-                  <span className="font-semibold">{currentInvoice.amount.toFixed(2)} ج.م</span>
+                  <span className="font-semibold">{formatCurrency(currentInvoice?.amount || 0)}</span>
                 </div>
                 <div className="flex justify-between text-green-600">
                   <span>المبلغ المدفوع:</span>
-                  <span className="font-semibold">{(currentInvoice.paid_amount || 0).toFixed(2)} ج.م</span>
+                  <span className="font-semibold">{formatCurrency(currentInvoice?.paid_amount || 0)}</span>
                 </div>
                 <div className="flex justify-between text-red-600">
                   <span>المبلغ المتبقي:</span>
-                  <span className="font-semibold">{(currentInvoice.remaining_amount || currentInvoice.amount).toFixed(2)} ج.م</span>
+                  <span className="font-semibold">{formatCurrency(currentInvoice?.remaining_amount || currentInvoice?.amount || 0)}</span>
                 </div>
               </div>
             </div>
